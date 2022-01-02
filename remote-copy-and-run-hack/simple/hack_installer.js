@@ -17,6 +17,8 @@ export async function main(ns) {
 	var res = ns.exec("hack.js", destination);
 	
 	if (res == 0) {
+		// Delete the script if it fails
+		ns.rm("hack.js", destination);
 		throw "Failed"
 	}
 }
