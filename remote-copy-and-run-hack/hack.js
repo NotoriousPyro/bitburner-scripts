@@ -1,3 +1,5 @@
+// This file is common to all the hack_installer.js and the desired one should be used with this.
+// This is the code that is copied to the target and ran.
 export async function main(ns) {
 	var target = ns.getHostname();
 	
