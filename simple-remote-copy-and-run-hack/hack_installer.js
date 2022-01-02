@@ -9,6 +9,8 @@ export async function main(ns) {
 
 	// Get root access to target server
 	ns.nuke(destination);
+
+	// Copy the hack script
 	await ns.scp("hack.js", "home", destination);
 
 	// Run the hack script
